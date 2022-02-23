@@ -1,96 +1,93 @@
-* {
+body {
   background-color: black;
-  border-color: rgb(47, 51, 54);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.wd-nav-bar {
-  display: flex;
-}
-
-.wd-nav-bar > * {
-  padding: 5px;
-  margin: 2px 2px 2px 16px;
-}
-
-.wd-search-tuiter {
-  background-color: darkgray;
+.list-group .list-group-item {
+  background-color: black;
   color: white;
-  width: 100%;
-  padding-left: 16px;
-  border-radius: 50px;
 }
 
-.wd-explore-settings {
-  margin-right: 12px;
+.list-group-item.active {
+  font-weight: bold;
+  border-color: transparent;
+  background-color: transparent;
+  color: white;
 }
 
-.wd-tab-layout {
-  display: flex;
-  overflow: auto;
-  margin-left: 16px;
-}
-
-.wd-tab-layout > * {
-  font-size: 15px;
-  padding: 16px;
-  text-decoration: none;
-  color: rgb(110, 118, 125);
+.wd-search {
+  background-color: #2b2b2e;
+  color: white;
   border: none;
+  margin: 5px 15px;
+  border-radius: 20px;
+  padding-left: 50px;
 }
 
-.wd-selected-tab {
-  color: rgb(29,161,242);
-  border-bottom: 3px solid rgb(29,161,242);
+.wd-search-icon {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  margin-left: 30px;
 }
 
-.wd-post-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 16px;
+.wd-settings {
+  font-size: 25px;
+  margin: 5px 15px;
+  color: white;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  color: gray;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus, .nav-tabs .nav-link.active {
+  border-bottom: 5px solid #1da1f2;
+}
+
+.nav-tabs .nav-link.active {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border-bottom: 5px solid #1da1f2;
 }
 
 .wd-post {
-  display: flex;
-  flex-direction: column;
-  font-size: 13px;
-  padding: 5px 5px 5px 16px;
-  width: 100%;
+  border-bottom: 1px solid #3b3d3d;
 }
 
-.wd-post-content-secondary {
-  color: rgb(110, 118, 125);
-  padding: 1px 0;
+.wd-post-image {
+  width: 75px;
+  height: 75px;
+  border-radius: 15px;
+  margin-left: 10px;
 }
 
-.wd-post-content-primary {
-  color: white;
-  padding: 1px 0;
+.wd-post-container {
+  padding: 0px;
+  border-left: 1px solid #3b3d3d;
+  border-right: 1px solid #3b3d3d;
 }
 
-hr {
-  width: 100%;
+.wd-follow-suggestion-image {
+  width: 50px;
+  height: 50px;
+  background-color: white;
 }
 
-.wd-horizontal-post-content {
-  display: flex;
-  flex-direction: row;
+.wd-follow-suggestion-list {
+  margin: 10px 0px 0 20px;
+  border-radius: 20px;
 }
 
-.wd-post-right-content {
-  height: 100px;
-  width: 100px;
-  margin-right: 16px;
-  border-radius: 20%;
+.wd-follow-suggestion-list .list-group-item {
+  background-color: #2b2b2e;
+  border: none;
 }
 
-.wd-post-logo-round {
-  height: 13px;
-  width: 13px;
-  border-radius: 50%;
+.wd-follow-btn {
+  background-color: white;
+  margin: 5px 0;
 }
 
-.wd-post-right-menu {
-  margin-right: 16px;
-  font-size: 15px;
-}
+
