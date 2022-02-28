@@ -1,0 +1,34 @@
+.wd-follow-avatar-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.wd-post-summary-image {
+  width: 75px;
+  height: 75px;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+.wd-search-icon {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.wd-search {
+  border-radius: 20px;
+  padding-left: 50px;
+}
+
+.wd-settings {
+  font-size: 25px;
+}
+
+.carousel-caption {
+  left: 0;
+  bottom: 0;
+  text-align: left;
+  padding-bottom: 0;
+  padding-left: 10px;
+}
