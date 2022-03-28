@@ -1,0 +1,15 @@
+{
+  "firstName": "Harry",
+  "lastName": "Potter",
+  "handle": "harrypotter",
+  "profilePicture": "/tuiter/assets/harry.jpeg",
+  "bannerPicture": "/tuiter/assets/hogwarts.jpg",
+  "bio": "Wizard, Student at Hogwarts. I am sometimes known as 'The Boy Who Lived'.",
+  "website": "https://youtube.com/webdevtv",
+  "location": "Boston, MA",
+  "dateOfBirth": "08/28/1996",
+  "dateJoined": "04/01/2019",
+  "followingCount": 312,
+  "followersCount": 180,
+  "tuitCount": 5196
+}
