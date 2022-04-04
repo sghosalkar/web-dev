@@ -2,23 +2,21 @@ import React from "react";
 import {useDispatch} from "react-redux";
 import './index.css';
 import TuitStats from "./tuit-stats";
+import {deleteTuit} from "../actions/tuits-actions";
 
 const TuitListItem = ({tuit}) => {
   const dispatch = useDispatch();
-  const deleteTuit = (tuit) => {
-    dispatch({type: 'delete-tuit', tuit})
-  };
 
   return(
     <li className="list-group-item d-flex border-secondary justify-content-between">
-      <img src={tuit.avatarImage} className="img-fluid rounded-circle wd-avatar-icon" alt={tuit.postedBy.username} />
+      {tuit.avatarImage && <img src={tuit.avatarImage} className="img-fluid rounded-circle wd-avatar-icon" alt="" />}
       <div className="ms-2 me-auto w-100">
         <div className="d-flex justify-content-between">
           <div>
-            <span className="fw-bold">{tuit.postedBy.username} </span>
-            <span className="text-secondary"> @{tuit.handle}</span>
+            {tuit.postedBy && tuit.postedBy.username && <span className="fw-bold">{tuit.postedBy.username} </span>}
+            {tuit.handle && <span className="text-secondary"> @{tuit.handle}</span>}
           </div>
-          <div><i onClick={() => deleteTuit(tuit)} className="fas fa-remove fa-pull-right"/></div>
+          <div><i onClick={() => deleteTuit(dispatch, tuit)} className="fas fa-remove fa-pull-right"/></div>
         </div>
         <div>{tuit.tuit}</div>
         {
