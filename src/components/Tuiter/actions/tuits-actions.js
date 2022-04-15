@@ -5,8 +5,23 @@ export const FIND_ALL_TUITS = 'FIND_ALL_TUITS';
 export const UPDATE_TUIT = 'UPDATE_TUIT';
 export const DELETE_TUIT = 'DELETE_TUIT';
 
-export const createTuit = async (dispatch, tuit) => {
-  const newTuit = await service.createTuit({tuit});
+export const createTuit = async (dispatch, tuitParams) => {
+  const tuit = {
+    postedBy: {
+      username: `${tuitParams.profile.firstName} ${tuitParams.profile.lastName}`,
+    },
+    handle: tuitParams.profile.handle,
+    time: "now",
+    tuit: tuitParams.tuit,
+    avatarImage: tuitParams.profile.profilePicture,
+    stats: {
+      retuits: 0,
+      likes: 0,
+      comments: 0
+    },
+  };
+
+  const newTuit = await service.createTuit(tuit);
   dispatch({
              type: CREATE_TUIT,
              newTuit

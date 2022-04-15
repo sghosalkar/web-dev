@@ -21,18 +21,12 @@ const TuitStats = ({tuit}) => {
       {
         tuit.stats &&
         <div className="row">
-          {
-            tuit.stats.comments &&
-            <span className="col-3">
-              <i className="fa-regular fa-comment"/> {tuit.stats.comments}
-            </span>
-          }
-          {
-            tuit.stats.retuits &&
-            <span className="col-3">
-              <i className="fa fa-retweet"/> {tuit.stats.retuits}
-            </span>
-          }
+          <span className="col-3">
+            <i className="fa-regular fa-comment"/> {tuit.stats.comments}
+          </span>
+          <span className="col-3">
+            <i className="fa fa-retweet"/> {tuit.stats.retuits}
+          </span>
           <span className="col-3" onClick={likeTuit}>
             {
               tuit.liked && <i className="fas fa-heart me-1" style={{color: 'red'}}/>
